@@ -1,117 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Báo Tường Hội An - Chuyện Phố Cổ</title>
+    <title>Khám Phá Di Sản - Báo Tường</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        /* CSS bổ sung riêng cho trang con để tạo nét báo tường */
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            padding: 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .section-box {
-            background: #fffef0; /* Màu giấy hơi vàng */
-            padding: 20px;
-            border: 2px dashed #a67c52;
-            border-radius: 10px;
-            position: relative;
-            box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
-        }
-
-        .section-box h2 {
-            font-family: 'Dancing Script', cursive;
-            color: #b0413e;
-            border-bottom: 2px solid #b0413e;
-            margin-bottom: 15px;
-            display: inline-block;
-        }
-
-        .section-box img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-        .back-home {
-            display: block;
-            text-align: center;
-            margin: 30px;
-            color: #4a7c44;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Hiệu ứng ghim giấy */
-        .section-box::before {
-            content: '📌';
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 20px;
-        }
-    </style>
 </head>
 <body>
 
-    <header>
-        <h1>PHỐ CỔ HỘI AN</h1>
-        <p>Gói trọn hồn quê trong lòng phố thị</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Trang Chủ</a>
+            <a href="Hoian.html" class="nav-link active">Hội An</a>
+            <a href="Halong.html" class="nav-link">Hạ Long</a>
+            <a href="Phuquoc.html" class="nav-link">Phú Quốc</a>
+        </div>
+    </nav>
+
+    <header class="sub-header">
+        <h1>KHÁM PHÁ HỘI AN</h1>
     </header>
 
-    <div class="grid-container">
-        
-        <section class="section-box">
-            <h2>🍜 Tinh Hoa Ẩm Thực</h2>
-            <img src="https://images.unsplash.com/photo-1565060050111-923f796d1964?auto=format&fit=crop&w=500" alt="Cao lầu">
-            <p><strong>Cao Lầu & Cơm Gà:</strong> Nhắc đến Hội An là nhắc đến sợi mì sần sật của Cao lầu hòa quyện với xá xíu đậm đà. Đừng quên thử nước mắm đặc trưng tạo nên linh hồn của món ăn phố Hội.</p>
+    <main>
+        <section class="detail-section">
+            <img src="images/hoian-1.jpg" alt="Hội An 1" class="detail-img">
+            <div class="detail-text">
+                <h2>Di Sản Thế Giới</h2>
+                <p>Phố cổ Hội An là một đô thị cổ nằm ở hạ lưu sông Thu Bồn, thuộc đồng bằng ven biển tỉnh Quảng Nam, Việt Nam. Với những ngôi nhà gỗ cổ kính, những bức tường vàng rực rỡ và không gian văn hóa đặc sắc, Hội An mang đến vẻ đẹp hoài niệm khó quên.</p>
+            </div>
         </section>
 
-        <section class="section-box">
-            <h2>🎭 Nét Đẹp Văn Hóa</h2>
-            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=500" alt="Lồng đèn">
-            <p><strong>Lễ hội hoa đăng:</strong> Vào đêm rằm, phố cổ tắt đèn, chỉ còn ánh sáng huyền ảo của lồng đèn và những đóa hoa đăng trôi trên sông Hoài, mang theo tâm tình của người dân địa phương.</p>
+        <section class="detail-section">
+            <img src="images/hoian-2.jpg" alt="Hội An 2" class="detail-img">
+            <div class="detail-text">
+                <h2>Vẻ Đẹp Đêm Rằm</h2>
+                <p>Mỗi đêm rằm, phố cổ tắt hết đèn điện và thắp lên hàng ngàn chiếc đèn lồng thủ công. Không gian trở nên huyền ảo, đưa du khách trở về với quá khứ xa xưa của một thương cảng sầm uất bậc nhất Đông Nam Á.</p>
+            </div>
         </section>
 
-        <section class="section-box">
-            <h2>🏯 Dấu Ấn Địa Danh</h2>
-            <img src="https://images.unsplash.com/photo-1599708153386-62cd3f0d3672?auto=format&fit=crop&w=500" alt="Chùa Cầu">
-            <p><strong>Chùa Cầu:</strong> Biểu tượng lịch sử kết nối văn hóa Việt - Nhật. Mái ngói thâm nghiêm cùng những bức tượng linh vật canh giữ cây cầu suốt hàng trăm năm qua.</p>
+        <section class="detail-section">
+            <img src="images/hoian-3.jpg" alt="Hội An 3" class="detail-img">
+            <div class="detail-text">
+                <h2>Ẩm Thực Độc Đáo</h2>
+                <p>Đến Hội An không thể bỏ qua những món ăn nức tiếng như Cao Lầu, cơm gà hay bánh mì Phượng. Sự giao thoa văn hóa Việt - Hoa - Nhật đã tạo nên một hương vị ẩm thực riêng biệt, tinh tế mà bình dị.</p>
+            </div>
         </section>
-
-        <section class="section-box">
-            <h2>🏖️ Điểm Đến Du Lịch</h2>
-            <img src="https://images.unsplash.com/photo-1590508005400-30230623ca27?auto=format&fit=crop&w=500" alt="Biển An Bàng">
-            <p><strong>Biển An Bàng & Rừng Dừa Bảy Mẫu:</strong> Ngoài phố cổ, bạn có thể trải nghiệm chèo thuyền thúng tại rừng dừa hoặc tận hưởng làn nước mát lạnh tại bãi biển An Bàng thơ mộng.</p>
-        </section>
-
-    </div>
-
-    <a href="index.html" class="back-home">← Quay lại Trang Chủ</a>
+    </main>
 
     <footer>
-        <p>© 2026 - Báo Tường Online | Nhóm 1 Thực Hiện</p>
+        <p>&copy; 2024 Báo Tường Điện Tử - Nhóm Của Bạn</p>
     </footer>
 
-</body>
-</html>
 </body>
 </html>
